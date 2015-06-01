@@ -1205,11 +1205,12 @@ static string get(const StringPairs & map, const string & key)
 
 static bool canBuildLocally(const string & platform)
 {
-    return platform == settings.thisSystem
+	return true;
+/*    return platform == settings.thisSystem
 #if __linux__
         || (platform == "i686-linux" && settings.thisSystem == "x86_64-linux")
 #endif
-        ;
+        ;*/
 }
 
 
